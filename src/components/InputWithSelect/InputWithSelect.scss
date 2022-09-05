@@ -1,0 +1,21 @@
+.inputWithSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__wrapper {
+    display: flex;
+  }
+  &__input {
+    width: 200px;
+    padding-left: 15px;
+    background: #f6f8ff;
+    border: 1px solid #e1e1ff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: 0.3s ease-out;
+    &:focus {
+      border: 1px solid #f76e85;
+      background: #fff;
+    }
+  }
+}

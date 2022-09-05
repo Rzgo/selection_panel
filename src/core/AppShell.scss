@@ -1,0 +1,11 @@
+.appShell {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__title {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    color: #f76e85;
+  }
+}

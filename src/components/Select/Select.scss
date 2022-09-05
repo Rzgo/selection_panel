@@ -1,0 +1,91 @@
+.selectContainer {
+  font-size: 14px;
+  position: relative;
+  border-radius: 12px;
+  &__header {
+    width: 170px;
+    height: 50px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #e1e1ff;
+    &_opened {
+      background: #fff !important;
+      border-radius: 0 5px 0 0;
+      border: 1px solid #0052ff26;
+      border-bottom: 0;
+      color: #f76e85;
+    }
+    &_selected {
+      background: #f6f8ff;
+    }
+    &_empty {
+      color: #93a0b8;
+      background: #f2f6ff;
+    }
+  }
+  &__body {
+    width: 170px;
+    max-height: 260px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 0 0 12px 12px;
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 100;
+    border: 1px solid #0052ff26;
+    transition: 0.1s ease-out;
+    &_closed {
+      border: 0;
+    }
+  }
+  &__item {
+    width: 170px;
+    height: 50px;
+    padding: 0 0 0 15px;
+    opacity: 1;
+    margin: 0 !important;
+    padding-right: 0 !important;
+    transition: 0.1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #0052ff26;
+    cursor: pointer;
+    &_closed {
+      height: 0 !important;
+      opacity: 0;
+      border: 0;
+    }
+    &:last-child {
+      border-radius: 0 0 12px 12px;
+    }
+    &:hover {
+      color: #f76e85;
+      background: linear-gradient(90deg, #edf6ff -19.11%, #fafcff 105.35%);
+    }
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+    &_rotate {
+      transform: rotate(360deg);
+      & path {
+        fill: #f76e85;
+      }
+    }
+  }
+}

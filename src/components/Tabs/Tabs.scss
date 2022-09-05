@@ -1,0 +1,18 @@
+.tabs-container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+
+  &__item {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &_active {
+      background: #f76e85;
+      color: #fff;
+    }
+  }
+}
